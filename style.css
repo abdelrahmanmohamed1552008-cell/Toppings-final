@@ -1,0 +1,66 @@
+/* link style */
+a {
+    color: beige;
+    text-decoration: none;
+}
+
+
+body {
+    text-align: center;
+    align-items: center;
+}
+
+/* text style starts */
+h1 {
+    background-color: lightblue;
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: 30px;
+    margin: auto;
+    width: 40%;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-family: "Epunda Slab", serif;
+}
+
+.series-container p {
+    padding: 20px;
+    background: linear-gradient(150deg, lightblue, white, beige);
+    text-transform: capitalize;
+    color: black;
+    font-size: 18px;
+}
+
+.series-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+}
+
+/* images style starts */
+.series-container img {
+    width: 170px;
+    height: 170px;
+    border-radius: 20px;
+    padding-bottom: 18px;
+    margin: auto;
+    animation: rotate 4s linear infinite alternate;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-15deg) 0;
+    }
+
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .series-container {
+        display: flex;
+    }
+}
